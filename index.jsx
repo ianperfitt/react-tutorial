@@ -3,18 +3,18 @@
     <div id="app"></div>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <!-- Babel Script -->
+    {/* Babel Script */}
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/jsx">
       const app = document.getElementById("app");
 
-      function Header({ title }) {
+      {function Header({ title }) {
         console.log(title);
         return <h1>{title}</h1>;
-      }
+      }}
 
-      function HomePage() {
-        const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+      {function HomePage() {
+        const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton']
 
         return (
           <div>
@@ -27,7 +27,7 @@
             <button>Like</button>
           </div>
         );
-      }
+      }}
 
       const root = ReactDOM.createRoot(app);
       root.render(<HomePage />);
